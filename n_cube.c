@@ -1,4 +1,5 @@
 #include<stdio.h>
+//The cube of n
 int main(){
 int n,cube;
 printf("Enter the number: ");
