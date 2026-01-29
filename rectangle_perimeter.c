@@ -1,4 +1,5 @@
 #include<stdio.h>
+//The perimeter of rectangle
 int main(){
 float length, breadth, perimeter;
 
