@@ -1,8 +1,20 @@
-#include<stdio.h>
-int main(){
-    int x;
-    printf("Enter a number: ");
-    scanf("%d", &x);
-    printf("%d \n", x >= '0' && x <= '9');
+#include <stdio.h>
+
+int main() {
+    int x, y, smallest;
+
+    printf("Enter two number: ");
+    scanf("%d %d", &x, &y);
+
+    if (x > y) {
+        smallest = y;
+    }
+
+    if (y > x) { 
+        smallest = x;
+    }
+
+    printf("smallest is: %d", smallest);
+
     return 0;
 }
