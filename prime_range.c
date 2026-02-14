@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int i, j, start, end, prime;
+    int i, j, start, end, count;
     printf("enter start number: ");
     scanf("%d", &start);
     printf("enter end number: ");
@@ -9,13 +9,13 @@ int main(){
         for(i=start; i<=end; i++){
 
              if(i>1){
-                prime = 0;
+                count = 0;
                 for(j=2; j<i; j++){
                      if(i%j == 0){
-                     prime++;
+                     count++;
                      }
                 }   
-                if(prime == 0){
+                if(count == 0){
                     printf("%d\n", i);
                 }
              }
