@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int i, j, start, end, count;
+    int i, j, start, end;
     printf("enter start number: ");
     scanf("%d", &start);
     printf("enter end number: ");
@@ -8,17 +8,15 @@ int main(){
 
         for(i=start; i<=end; i++){
 
-             if(i>1){
-                count = 0;
-                for(j=2; j<i; j++){
-                     if(i%j == 0){
-                     count++;
-                     }
+             if(i<=1)
+                continue;
+             for(j=2; j*j<=i; j++){
+                     if(i%j == 0)
+                     break; 
                 }   
-                if(count == 0){
+                if(j*j > i){
                     printf("%d\n", i);
-                }
-             }
+                } 
         }
     return 0;
 }
