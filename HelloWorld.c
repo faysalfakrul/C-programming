@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    int number = 25;
+    int number = 26;
     char star = '*';
     int age = 22;
     float pi = 3.14;
