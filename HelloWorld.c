@@ -3,7 +3,7 @@
 int main(){
     int number = 26;
     char star = '*';
-    int age = 22;
+    int age = 24;
     float pi = 3.14;
     int a = 30;
     int A = 30;
