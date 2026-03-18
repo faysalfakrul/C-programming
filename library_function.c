@@ -9,9 +9,9 @@ float a=5;
 float b=3;
 float radius=3;
 float side=4;
-printf(" Area is : %f", rectangleArea(a,b) );
-printf(" Area is : %f", circleArea(radius) );
-printf(" Area is : %f", squareArea(side) );
+printf(" Area of rectangle is : %f\n", rectangleArea(a,b) );
+printf(" Area of circle is : %f\n", circleArea(radius) );
+printf(" Area of square is : %f\n", squareArea(side) );
     return 0;
 }
 
