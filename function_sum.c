@@ -14,6 +14,6 @@ printf("The sum is : %d", s);
     return 0;
 }
 
-int sum(int a, int b){
-    return a+b;
+int sum(int x, int y){
+    return x+y;
 }
