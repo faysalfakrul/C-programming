@@ -9,7 +9,7 @@ printf("Sum is : %d ", sum(5));
 }
 
 int sum(int n){
-    if(n==1){
+    if(n==1){// base case
         return 1;
     }
 int sumNm=sum(n-1);
