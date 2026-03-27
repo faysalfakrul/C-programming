@@ -3,8 +3,11 @@
 void maxNum(int *a,int *b);
 
 int main(){
-int a=5;
-int b=9;
+int a,b;
+printf("Enter the first number: ");
+scanf("%d",&a);
+printf("Enter the second number: ");
+scanf("%d", &b);
 maxNum(&a,&b);
     return 0;
 }
