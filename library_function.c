@@ -5,7 +5,7 @@ float squareArea(float side);
 float circleArea(float radius);
 float rectangleArea(float a, float b);
 int main() {
-float a=5;
+float a=6;
 float b=3;
 float radius=3;
 float side=4;
