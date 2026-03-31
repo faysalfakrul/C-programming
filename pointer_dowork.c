@@ -3,7 +3,7 @@
 void doWork(int a, int b, int *sum, int *prod, int *avg);
 
 int main(){
-int a=3, b=5;
+int a=4, b=6;
 int sum,prod,avg;
  doWork(a,b,&sum,&prod,&avg);
  printf("sum is= %d,  prod is= %d,  avg is= %d\n", sum,prod,avg);
