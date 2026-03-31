@@ -3,7 +3,7 @@
 float convertTemp(float celsius);
 
 int main(){
-float far=convertTemp(37);
+float far=convertTemp(52);
 printf("Far is : %f", far);
     return 0;
 }
