@@ -7,7 +7,7 @@ int main(){
     printf("Array elements in reverse order : \n");
 
     for(i=4; i>=0; i--){
-        printf("%d",arr[i]);
+        printf("%d\t",arr[i]);
     }
     return 0;
 }
