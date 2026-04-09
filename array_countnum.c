@@ -10,6 +10,6 @@ for(i=0; i<6; i++){
         count++;
     }
 }
-printf("Number %d occur %d time: ", x,count);
+printf("Number %d occur %d time ", x,count);
 return 0;    
 }
