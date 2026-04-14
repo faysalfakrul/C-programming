@@ -4,7 +4,7 @@ void printString(char arr[]);
 
 int main(){
 char firstName[]="Faysal";
-char lastName[]="fakrul";
+char lastName[]="Fakrul";
 
 printString(firstName);
 printString(lastName);
