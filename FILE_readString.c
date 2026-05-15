@@ -1,32 +1,26 @@
-#include<stdio.h>
-struct Student {
-    int id;
-    char name[50];
-    char department[30];
-    float cgpa;
-};
+#include <stdio.h>
 
-int main(){
-    FILE *fptr;
-    struct Student s;
-    
- fptr= fopen("Student.txt","r");
+int main() {
+    FILE *fp;
+    char str[100];
 
-if(fptr==NULL){
-    printf("file cannot be opened\n");
-    return 1;
-}
-fscanf(fptr,"%d",&s.id);
-fscanf(fptr," %[^\n]",s.name);
-fscanf(fptr," %[^\n]",s.department);
-fscanf(fptr,"%f",&s.cgpa);
+    // open file in read mode
+    fp = fopen("data.txt", "r");
 
-printf("-----STUDENT INFORMATION-----\n");
-printf("ID: %d\n", s.id);
-printf("Name: %s\n", s.name);
-printf("Department: %s\n", s.department);
-printf("CGPA: %f\n", s.cgpa);
+    // check if file exists
+    if (fp == NULL) {
+        printf("File cannot be opened.\n");
+        return 1;
+    }
 
-fclose(fptr);
+    // read string from file
+    fgets(str, sizeof(str), fp);
+
+    // display output
+    printf("String from file: %s", str);
+
+    // close file
+    fclose(fp);
+
     return 0;
 }
